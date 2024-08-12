@@ -1,0 +1,101 @@
+/* Styling Tombol Navigasi */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    background-color: #ffffff; /* Latar belakang putih cerah */
+    border: 2px solid #20c997; /* Border dengan warna cerah */
+    border-radius: 50%; /* Bentuk bulat */
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transisi halus */
+}
+
+.nav-button.left {
+    left: 10px;
+}
+
+.nav-button.right {
+    right: 10px;
+}
+
+.nav-button:hover {
+    background-color: #20c997; /* Warna latar belakang saat hover */
+    color: #ffffff; /* Warna teks saat hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Bayangan lebih menonjol saat hover */
+}
+
+/* Styling Card Produk */
+.card {
+    max-width: 250px; /* Maksimal lebar card */
+    margin: auto; /* Memusatkan card */
+    border-radius: 12px; /* Sudut lebih bulat */
+    position: relative; /* Posisi relatif untuk efek zoom dan latar belakang */
+    overflow: hidden; /* Menghindari konten card melampaui batas */
+    transition: background-color 0.3s, transform 0.3s; /* Transisi halus */
+    background-color: #ffffff; /* Latar belakang card putih cerah */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    overflow: hidden; /* Menghindari gambar melampaui batas card */
+    display: flex;
+    justify-content: center; /* Menempatkan gambar di tengah secara horizontal */
+    align-items: center; /* Menempatkan gambar di tengah secara vertikal */
+}
+
+.card-img-top img {
+    width: 100%;
+    height: 100%; /* Menjaga proporsi gambar */
+    object-fit: cover; /* Menyesuaikan gambar dengan ukuran card */
+    border-bottom: 4px solid #20c997; /* Garis bawah berwarna cerah */
+}
+
+/* Efek Hover pada Card Produk */
+.card:hover {
+    transform: scale(1.05); /* Memperbesar card saat hover */
+    background-color: #f0f8ff; /* Mengubah warna latar belakang card saat hover */
+}
+
+/* Styling Tombol dalam Card */
+.btn-primary {
+    background-color: #20c997; /* Warna hijau cerah */
+    color: #ffffff; /* Warna teks putih */
+    border: none;
+    border-radius: 8px; /* Sudut tombol membulat */
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #17a89c; /* Hijau lebih gelap saat hover */
+    color: #ffffff; /* Warna teks tetap putih */
+}
+
+/* Styling Modal */
+.modal-content {
+    border-radius: 12px; /* Sudut modal lebih bulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+    background-color: #ffffff; /* Latar belakang modal putih cerah */
+}
+
+/* Bayangan pada Modal */
+.modal-footer {
+    border-top: 1px solid #dee2e6; /* Garis atas pada footer modal */
+}
+
+/* Latar Belakang Halaman */
+body {
+    background-color: #eaf8f4; /* Warna latar belakang lembut */
+}
+
+/* Menyusun Komponen Produk secara Grid */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Mengatur produk agar melipat ke baris berikutnya */
+    justify-content: center; /* Mengatur produk agar di tengah secara horizontal */
+    padding: 20px; /* Padding untuk jarak */
+}
